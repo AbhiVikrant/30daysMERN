@@ -389,5 +389,109 @@
         </article>
       </header>
     </section>
+
+    <h2>About form element in html</h2>
+    <form action="/form.html">
+      <label for="fname"
+        >Enter your First Name: &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input
+        type="text"
+        placeholder="your First Name"
+        name="fname"
+        value="fname"
+        required
+        minlength="3"
+      />
+      <br />
+      <br />
+      <label for="secName">Enter your Second Name: &nbsp; &nbsp;</label>
+      <input
+        type="text"
+        placeholder="Enter Second Name"
+        name="secName"
+        value="secName"
+        required
+      />
+      <br />
+      <br />
+      <label for="email"
+        >Enter your Email:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="abc@gmail.com"
+        value="abc@gmail.com"
+        required
+      />
+      <br /><br />
+      <label for="color">
+        Choose your fav color: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input type="color" name="favcolor" id="favcolor" value="#f6b73c" />
+      <br /><br />
+      <label for="dob"
+        >Enter your DOB: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        value="2024-08-10"
+        min="1923-08-11"
+        max="2024-08-11"
+        required
+      />
+      <br />
+      <br />
+      <label for="file">Enter your birth certificate: </label>
+      <input
+        type="file"
+        name="file"
+        id="file"
+        accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      />
+      <br />
+      <br />
+      <fieldset>
+        <legend>Choose your Language:</legend>
+
+        <input type="checkbox" id="hindi" name="hindi" checked />
+        <label for="hindi">Hindi</label>
+
+        <input type="checkbox" id="english" name="english" />
+        <label for="english">English</label>
+      </fieldset>
+      <br />
+      <br />
+      <label for="pl">Choose your fav Programming Language: </label>
+      <input type="radio" name="pl" id="java" />
+      <label for="java">Java</label>
+      <input type="radio" name="pl" id="c" />
+      <label for="c">C Programming</label>
+      <input type="radio" name="pl" id="c++" />
+      <label for="c++">C++ Programming</label>
+      <input type="radio" name="pl" id="js" />
+      <label for="js">JavaScript Programming</label>
+
+      <br />
+      <br />
+      <label for="tel">Enter you cel number: </label>
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        pattern="
+      [6789][0-9]{9}"
+        title="Please enter valid phone number"
+      />
+      <br />
+      <br />
+      <input type="submit" value="submit" name="Submit" />
+    </form>
   </body>
 </html>
